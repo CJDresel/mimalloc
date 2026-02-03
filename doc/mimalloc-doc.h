@@ -371,22 +371,22 @@ void* mi_realloc_aligned_at(void* p, size_t newsize, size_t alignment, size_t of
 #define mi_reallocn_tp(p,tp,count)  ((tp*)mi_reallocn(p,count,sizeof(tp)))
 
 /// Allocate a block of type \a tp in a heap \a hp.
-#define mi_heap_malloc_tp(hp,tp)        ((tp*)mi_heap_malloc(hp,sizeof(tp)))
+#define mi_heap_malloc_tp(tp,hp)        ((tp*)mi_heap_malloc(hp,sizeof(tp)))
 
 /// Allocate a zero-initialized block of type \a tp in a heap \a hp.
-#define mi_heap_zalloc_tp(hp,tp)        ((tp*)mi_heap_zalloc(hp,sizeof(tp)))
+#define mi_heap_zalloc_tp(tp,hp)        ((tp*)mi_heap_zalloc(hp,sizeof(tp)))
 
 /// Allocate \a count zero-initialized blocks of type \a tp in a heap \a hp.
-#define mi_heap_calloc_tp(hp,tp,count)      ((tp*)mi_heap_calloc(hp,count,sizeof(tp)))
+#define mi_heap_calloc_tp(tp,hp,count)      ((tp*)mi_heap_calloc(hp,count,sizeof(tp)))
 
 /// Allocate \a count blocks of type \a tp in a heap \a hp.
-#define mi_heap_mallocn_tp(hp,tp,count)     ((tp*)mi_heap_mallocn(hp,count,sizeof(tp)))
+#define mi_heap_mallocn_tp(tp,hp,count)     ((tp*)mi_heap_mallocn(hp,count,sizeof(tp)))
 
 /// Re-allocate to \a count blocks of type \a tp in a heap \a hp.
-#define mi_heap_reallocn_tp(hp,p,tp,count)  ((tp*)mi_heap_reallocn(p,count,sizeof(tp)))
+#define mi_heap_reallocn_tp(tp,hp,p,count)  ((tp*)mi_heap_reallocn(p,count,sizeof(tp)))
 
 /// Re-allocate to \a count zero initialized blocks of type \a tp in a heap \a hp.
-#define mi_heap_recalloc_tp(hp,p,tp,count)  ((tp*)mi_heap_recalloc(p,count,sizeof(tp)))
+#define mi_heap_recalloc_tp(tp,hp,p,count)  ((tp*)mi_heap_recalloc(p,count,sizeof(tp)))
 
 /// \}
 
