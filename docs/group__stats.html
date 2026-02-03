@@ -163,7 +163,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gacb42dede4c38c38f2014b5450c5fcba8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>v3</b>: Get the statistics for a heap as JSON.  <br /></td></tr>
 <tr class="separator:gacb42dede4c38c38f2014b5450c5fcba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafea365d7842f5f5bc1f235bbc303d585" id="r_gafea365d7842f5f5bc1f235bbc303d585"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafea365d7842f5f5bc1f235bbc303d585">mi_heap_stats_print_out</a> (<a class="el" href="group__heap.html#ga34a47cde5a5b38c29f1aa3c5e76943c2">mi_heap_t</a> *heap, <a class="el" href="group__extended.html#gadf31cea7d0332a81c8b882cbbdbadb8d">mi_output_fun</a> *out, void *arg)</td></tr>
-<tr class="memdesc:gafea365d7842f5f5bc1f235bbc303d585"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>v3</b>: Show the heap statitics as JSON.  <br /></td></tr>
+<tr class="memdesc:gafea365d7842f5f5bc1f235bbc303d585"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>v3</b>: Show the heap statistics as JSON.  <br /></td></tr>
 <tr class="separator:gafea365d7842f5f5bc1f235bbc303d585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5a34328f846c661aa560f4769cfc15f1" id="r_ga5a34328f846c661aa560f4769cfc15f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5a34328f846c661aa560f4769cfc15f1">mi_heap_stats_merge_to_subproc</a> (<a class="el" href="group__heap.html#ga34a47cde5a5b38c29f1aa3c5e76943c2">mi_heap_t</a> *heap)</td></tr>
 <tr class="memdesc:ga5a34328f846c661aa560f4769cfc15f1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>v3</b>: xplicitly merge the statistics of the current heap with the subprocess.  <br /></td></tr>
@@ -172,10 +172,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga5ec3f9058eec804924711ab38ba64b51"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>v3</b>: Get statistics for a given subprocess aggregated over all its heaps.  <br /></td></tr>
 <tr class="separator:ga5ec3f9058eec804924711ab38ba64b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad1cf918f08b6506e65ae134423477a0b" id="r_gad1cf918f08b6506e65ae134423477a0b"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad1cf918f08b6506e65ae134423477a0b">mi_subproc_stats_get_json</a> (<a class="el" href="group__subproc.html#ga8c0bcd1fee27c7641e9c3c0d991b3b7d">mi_subproc_id_t</a> subproc_id, size_t buf_size, char *buf)</td></tr>
-<tr class="memdesc:gad1cf918f08b6506e65ae134423477a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>v3</b>: Show the subproc statitics aggregated with all its heaps as JSON.  <br /></td></tr>
+<tr class="memdesc:gad1cf918f08b6506e65ae134423477a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>v3</b>: Show the subproc statistics aggregated over all its heaps as JSON.  <br /></td></tr>
 <tr class="separator:gad1cf918f08b6506e65ae134423477a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga59ec89969837db414a6bce8b58915624" id="r_ga59ec89969837db414a6bce8b58915624"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga59ec89969837db414a6bce8b58915624">mi_subproc_stats_print_out</a> (<a class="el" href="group__subproc.html#ga8c0bcd1fee27c7641e9c3c0d991b3b7d">mi_subproc_id_t</a> subproc_id, <a class="el" href="group__extended.html#gadf31cea7d0332a81c8b882cbbdbadb8d">mi_output_fun</a> *out, void *arg)</td></tr>
-<tr class="memdesc:ga59ec89969837db414a6bce8b58915624"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>v3</b>: Show the subproc statitics aggregated with all its heaps as JSON.  <br /></td></tr>
+<tr class="memdesc:ga59ec89969837db414a6bce8b58915624"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>v3</b>: Print the subproc statistics aggregated over all its heaps.  <br /></td></tr>
 <tr class="separator:ga59ec89969837db414a6bce8b58915624"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga19f1a04bd972e11e4f3b586f25229d5b" id="r_ga19f1a04bd972e11e4f3b586f25229d5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga19f1a04bd972e11e4f3b586f25229d5b">mi_subproc_heap_stats_print_out</a> (<a class="el" href="group__subproc.html#ga8c0bcd1fee27c7641e9c3c0d991b3b7d">mi_subproc_id_t</a> subproc_id, <a class="el" href="group__extended.html#gadf31cea7d0332a81c8b882cbbdbadb8d">mi_output_fun</a> *out, void *arg)</td></tr>
 <tr class="memdesc:ga19f1a04bd972e11e4f3b586f25229d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>v3</b>: Print statistics for a given subprocess with each heap separately printed.  <br /></td></tr>
@@ -383,7 +383,7 @@ initialize with `MI_STAT_VERSION (so linking dynamically with a separately compi
       </table>
 </div><div class="memdoc">
 
-<p><b>v3</b>: Show the heap statitics as JSON. </p>
+<p><b>v3</b>: Show the heap statistics as JSON. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">heap</td><td>The heap. </td></tr>
@@ -812,7 +812,7 @@ initialize with `MI_STAT_VERSION (so linking dynamically with a separately compi
       </table>
 </div><div class="memdoc">
 
-<p><b>v3</b>: Show the subproc statitics aggregated with all its heaps as JSON. </p>
+<p><b>v3</b>: Show the subproc statistics aggregated over all its heaps as JSON. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subproc_id</td><td>The subprocess. </td></tr>
@@ -849,7 +849,7 @@ initialize with `MI_STAT_VERSION (so linking dynamically with a separately compi
       </table>
 </div><div class="memdoc">
 
-<p><b>v3</b>: Show the subproc statitics aggregated with all its heaps as JSON. </p>
+<p><b>v3</b>: Print the subproc statistics aggregated over all its heaps. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subproc_id</td><td>The subprocess. </td></tr>

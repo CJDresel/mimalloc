@@ -1109,7 +1109,7 @@ bool mi_heap_stats_get(mi_heap_t* heap, mi_stats_t* stats);
 /// Use mi_free() to free the buffer if the \a buf parameter was \a NULL.
 char* mi_heap_stats_get_json(mi_heap_t* heap, size_t buf_size, char* buf);      // use mi_free to free the result if the input buf == NULL
 
-/// @brief __v3__: Show the heap statitics as JSON.
+/// @brief __v3__: Show the heap statistics as JSON.
 /// @param heap The heap.
 /// @param out An output function or \a NULL for the default.
 /// @param arg Optional argument passed to \a out (if not \a NULL)
@@ -1128,7 +1128,7 @@ void mi_heap_stats_merge_to_subproc(mi_heap_t* heap);
 /// with the linked mimalloc version.
 bool mi_subproc_stats_get(mi_subproc_id_t subproc_id, mi_stats_t* stats);
 
-/// @brief __v3__: Show the subproc statitics aggregated with all its heaps as JSON.
+/// @brief __v3__: Show the subproc statistics aggregated over all its heaps as JSON.
 /// @param subproc_id The subprocess.
 /// @param buf_size Byte size of the buffer \a buf (or 0 if \a buf is \a NULL).
 /// @param buf The buffer. Pass \a NULL to allocate a fresh buffer.
@@ -1136,7 +1136,7 @@ bool mi_subproc_stats_get(mi_subproc_id_t subproc_id, mi_stats_t* stats);
 /// Use mi_free() to free the buffer if the \a buf parameter was \a NULL.
 char* mi_subproc_stats_get_json(mi_subproc_id_t subproc_id, size_t buf_size, char* buf);      // use mi_free to free the result if the input buf == NULL
 
-/// @brief __v3__: Show the subproc statitics aggregated with all its heaps as JSON.
+/// @brief __v3__: Print the subproc statistics aggregated over all its heaps.
 /// @param subproc_id The subprocess.
 /// @param out An output function or \a NULL for the default.
 /// @param arg Optional argument passed to \a out (if not \a NULL)
